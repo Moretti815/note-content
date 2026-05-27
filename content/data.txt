@@ -1,0 +1,186 @@
+check
+#测试
+多张图片连续排版
+
+一张图片
+![test](./assets/favicon.ico)
+两张图片
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+三张图片
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+四张图片
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+五张图片
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+十一张图片
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+![test](./assets/favicon.ico)
+
+---
+check
+#测试
+长内容附带图片
+长内容附带图片
+长内容附带图片
+![test](./assets/favicon.ico)
+
+长内容附带图片
+
+长内容附带图片
+---
+check
+#测试 此处是正文，可以和标签在同一行
+---
+check
+#测试
+![test](./assets/favicon.ico)
+---
+【终极冒烟测试用例 V1.0】
+#测试 #AST解析渲染引擎
+1. **基础样式覆盖**：**粗体**、*斜体*、~~删除线~~、%%减弱%%、++下划线++、+_+虚线下划线+_+、^^波浪线^^。
+2. **色彩体系检验**：{fg-r}红色{/fg-r}、{fg-p}粉色{/fg-p}、{fg-g}绿色{/fg-g}、{fg-b}蓝色{/fg-b}、{fg-y}黄色{/fg-y}、{fg-u}紫色{/fg-u}。
+3. **高亮与笔触**：{bg-y}黄色高亮{/bg-y}、{bg-p}粉色高亮{/bg-p}、{m-g}绿色标记{/m-g}、{m-o}橙色标记{/m-o}。
+4. **扩展组件测试**：(( 纸胶带样式 ))、||剧透文本遮盖||、{ruby-Zhù Yiī}注音测试{/ruby}、{rainbow}流光彩虹效果测试{/rainbow}。
+5. **复杂内联嵌套测试**：
+**{fg-#ffffff}{bg-#000000}黑底白字粗体嵌套 {ruby-Text}(( ||{w-r}红色波浪剧透胶带{/w-r}|| )){/ruby} 与 {m-g}++绿色标记下划线++{/m-g}{/bg}{/fg}**
+
+{center}
+{rainbow-90deg, #74c0fc, #8ce99a, #ffd43b}【 阶段二：同类块级元素多层嵌套 】{/rainbow}
+{/center}
+
+↓↓ 1. 多重折叠块嵌套测试
+外部折叠容器内容。
+↓↓ 内层折叠块（第二层）
+中间层折叠内容，验证边界闭合逻辑。
+↓↓ 核心内层（第三层）
+底层折叠内容。
+{center}
+(( 嵌套底层的组件样式 ))
+{/center}
+↑↑
+↑↑
+外部折叠容器收尾。
+↑↑
+
+{tabs: 选项卡 A | 选项卡 B}
+{center}**当前区域：外层选项卡 A**{/center}
+{tabs: 子选项卡 A-1 | 子选项卡 A-2}
+子选项卡 A-1 内容。用于验证嵌套选项卡的定界符解析。
+===
+子选项卡 A-2 内容。
+{/tabs}
+===
+{center}**当前区域：外层选项卡 B**{/center}
+{tabs: 子选项卡 B-1 | 子选项卡 B-2}
+子选项卡 B-1，验证 {ruby-Nested}嵌套{/ruby} 状态。
+===
+子选项卡 B-2。
+{/tabs}
+{/tabs}
+
+{center}
+{rainbow-90deg, #e599f7, #74c0fc, #8ce99a}【 阶段三：混合块级容器异构叠合 】{/rainbow}
+{/center}
+
+{muse}
+一级 Muse 引用块示例。
+↓↓ 引用内嵌套折叠
+折叠块位于引用块内部。
+{tabs: 文本区域 | 样式展示}
+**文本区域**：
+{muse}
+*“用于测试多层嵌套下的文本渲染。”* —— {ruby-Source}引用说明{/ruby}
+{/muse}
+===
+**样式展示**：
+{center}
+**(( {fg-#00ff00}{bg-#ff0000}{ud-u}居中+自定义背景+文字颜色+下划线+粗体+胶带{/ud-u}{/bg}{/fg} ))**
+{/center}
+{/tabs}
+↑↑
+引用内容结束。
+{/muse}
+---
+Petal
+#用法 #秘密时间线
+点击页面左上角那朵若隐若现的花朵，在弹出的输入框中输入约定的轻语即可开启秘密时间线。
+本 Demo 的解锁密语为：🐰
+密语匹配成功后，即可进入。
+---
+Petal
+#用法 #内容
+超链接链接为 #N 时 点击后会取消分类并跳转。
+[点击跳转到 #5](#5)
+---
+Petal
+#用法 #分享
+单击卡片后自动为 URL 添加序号，页面加载时会自动跳转到那个卡片，序号可以通过点击空白处消除。
+---
+Petal
+#用法 #分享 #本地记忆
+未阅读的内容，时间节点将高亮显示，点击后会取消高亮并将唯一特征记录到本地缓存中。公开时间线与秘密时间线相互独立。
+---
+Petal
+#用法 #内容
+当有分类时，自动在时间节点下方显示一个锚点，点击后会取消分类，然后跳转过去。
+---
+Petal
+#用法 #内容 #特殊语法
+Petal Note 内置了一套自定义语法引擎，任何语法都在 TOML 配置。仓库中的 [syntax.toml](https://github.com/miniyu157/petal-note/blob/main/public/syntax.toml) 也预设了很多常用的语法，例如：
+**加粗** *斜体* ++下划线++ ~~删除线~~ ^^波浪线^^ %%减弱%%
+{fg-p}彩色前景色{/fg-p} {bg-p}彩色背景色{/bg-p} {w-r}彩色{/w-r}{w-g}波浪线{/w-g} {m-y}马克笔{/m-y} {m-u}五颜六色{/m-u} {u-u}彩色{/u-u}{u-p}下划线{/u-p} {ud-r}彩色{/ud-r}{ud-g}虚线{/ud-g}{ud-u}下划线{/ud-u}
+**还有一些奇妙语法：**%%包括这个展开/折叠组件都是一个独立的语法定义%%↓↓ 点击展开 / 折叠
+{ruby-zhu yin}注音{/ruby} 
+||剧透/模糊效果|| <- 鼠标悬停查看，剧透/模糊效果
+{rainbow-90deg, #74c0fc, #e599f7, #faa2c1}固定色彩虹{/rainbow} {rainbow}流光彩虹{/rainbow}{muse}
+心语引言 (( 纸胶带 ))
+{/muse}
+↑↑使用反斜杠进行转义，例如 {bg-g}\(( 纸胶带 )){/bg-g}。配置得当，基本可以混合使用。
+放心！Petal Note 遵循 {ud-b}**究极开闭原则**{/ud-b}，杜绝一切硬编码。语法引擎是完全开放的，只需一个 TOML 文件定义即可，甚至还可以完美复刻 *GitHub Alerts* 或者 *Markdown* 部分标准语法，相关示例代码请 [查看文档](https://github.com/miniyu157/petal-note/tree/main?tab=readme-ov-file#-%E7%BC%96%E8%BE%91%E5%99%A8%E5%B7%A5%E5%85%B7%E6%A0%8F%E8%AF%A6%E8%A7%A3)
+(( ![editor_toolbox](./assets/editor_toolbox.png) 甚至是编辑器工具栏的合并行为都可以控制，还支持 **TOML 内链表/数组** 定义复杂图标模板 ))
+单击左下角那片小叶子即可体验内置编辑器 密码: {w-r}✨{/w-r}
+关于{ud-u}编辑器鉴权加密{/ud-u}、{ud-r}复杂正则语法定义{/ud-r}等信息，请移步[文档说明](https://github.com/miniyu157/petal-note/tree/main?tab=readme-ov-file#-%E8%87%AA%E5%AE%9A%E4%B9%89%E8%AF%AD%E6%B3%95)
+---
+Petal
+#用法 #内容
+正文中可以使用简单的 markdown 图片语法和超链接语法，多张连续的图片会被合并为表格。带有 https:// 或 http:// 的 URL也会被渲染为可点击的超链接。单击此处即可展开查看图片
+![logo](./assets/favicon.png)
+---
+Petal
+#用法 #内容
+每条碎碎念由 '---' 分割，第一行为时间线节点添加描述，可以是时间戳，也可以是任意文本；
+第二行及以下为正文，正文第一行中的 #XXX 解析为为标签，可以在顶部按照标签过滤。
+自然换行和手动换行的间距是不同的，前者较小，后者较大。
+---
+Petal
+#用法 #内容
+从 TXT 或网络 URL 读取碎碎念并渲染, 不会自动排序，没有时间戳格式。卡片超过一定长度后会自动折叠，大概为五行左右的高度。
+---
+Petal
+#用法 #配置
+配置文件是 config.toml，可以定义一些基础配置，例如页面边上的 URL、浏览器选项卡颜色、标语、字体等等，就像主流的博客框架那样。
+---
+2026-02-09 14:00
+#碎碎念
+如果你喜欢，请在 [GitHub](https://github.com/miniyu157/petal-note) 上帮我点个 Star 哦！✨
+也欢迎在 [Issues](https://github.com/miniyu157/petal-note/issues) 中提出任何建议和意见。
+也可以通过上方标签列表快速筛选。
